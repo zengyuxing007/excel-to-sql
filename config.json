@@ -1,0 +1,20 @@
+{
+	"src" :"./keji.xls",
+	"db_sheet_name":"keji",
+	"excel_sheet_number" :"1",
+	"cols_info":{
+		"1":["no","str"],
+		"2":["works_name","str"],
+		"3":["teamleader","str"],
+		"4":["teamleader_class","str"],
+		"5":["college","str"],
+		"6":["teacher","str"],
+		"7":["type","str"],
+		"8":["wang_money","str"],
+		"9":["end_money","str"]
+	},
+	"start_row":"3",
+	"end_row":"",
+	"barring_row":[],
+	"output":"./keji.sql"
+}
