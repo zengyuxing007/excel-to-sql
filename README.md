@@ -13,9 +13,9 @@ if you use Mysql and you want to import the data form excel,this tool will help 
 
 This tool is written by Python2.7,depend on xlrd(0.9.3).
 
-You should install Python2.7 at first, this is [download link](https://www.python.org/download).
+* You should install Python2.7 at first, this is [download link](https://www.python.org/download).
 
-Then get this tool by git clone or Download ZIP
+* Then get this tool by git clone or Download ZIP
 ````
 get clone https://github.com/zhengrenzhe/excel-to-sql.git
 ````
