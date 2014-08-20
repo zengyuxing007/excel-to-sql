@@ -56,12 +56,44 @@ example:
 
 *  `cols_info`
    The keys are cols number in the excel that you want to import to the Mysql.It don't need write in order and don't need write every cols,you can also:
-````json
+	````json
 	"cols_info":{
 		"4":["edu","str"],
 		"1":["name","str"],
 		"2":["age","num"],
 		"5":["phone","str"]
-	},
-````
+	}
+	````
+	The each value is a dict,the first is the column in the dict is will be imported into the field name in mysql.
+	![](http://droiz.qiniudn.com/excel-to-sqlexcel-to-sql2.png)
+	the second is the column in the dict is the field datatype ,support 'num' or 'str'.if the field datatype in Mysql is a string,write 'str', otherwise write 'num'.
+*   `start_row`
+	the rows that start to read ,default start form 1(the first row).
 	
+	````
+	"start_row":"2", //start read form second row
+	"start_row":"",  //srart read form first row
+	````
+*   `end_row`
+	the rows that end to read ,default is length of the sheet(the last row).if it's empty,the program will read every rows.
+
+	````
+	"end_row":"20", //end read to 20 row
+	"end_row":"",   //read every rows
+	````
+*   `barring_row`
+	if you want skip one row,you can write rows in the list.or empty
+	````
+	[1,3,5,7]  //will skip these row
+	[]         //don't skip each row
+	````
+*   `output`
+	The sql path in disk relative to the program.
+
+When you are finished to write config.json ,running the py to create sql. double clickc or execute:
+````python
+python excelTosql.py
+````
+
+##License
+[MIT](https://github.com/zhengrenzhe/excel-to-sql/blob/master/LICENSE "MIT")
