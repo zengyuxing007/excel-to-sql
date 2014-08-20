@@ -24,4 +24,23 @@ get clone https://github.com/zhengrenzhe/excel-to-sql.git
 python setup.py install
 ````
 * Write config.json. This is a configuration file to tell the program how to read the excel.
- * 
+
+example:
+````json
+{
+	"src" :"./info.xls",
+	"db_sheet_name":"info",
+	"excel_sheet_number" :"1",
+	"cols_info":{
+		"1":["no","str"],
+		"2":["works_name","str"],
+		"3":["teamleader","str"],
+		"4":["teamleader_class","str"],
+		"5":["college","str"]
+	},
+	"start_row":"2",
+	"end_row":"",
+	"barring_row":[],
+	"output":"./info.sql"
+}
+````
