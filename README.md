@@ -32,11 +32,11 @@ example:
 	"db_sheet_name":"info",
 	"excel_sheet_number" :"1",
 	"cols_info":{
-		"1":["no","str"],
-		"2":["works_name","str"],
-		"3":["teamleader","str"],
-		"4":["teamleader_class","str"],
-		"5":["college","str"]
+		"1":["name","str"],
+		"2":["age","num"],
+		"3":["sex","str"],
+		"4":["edu","str"],
+		"5":["phone","str"]
 	},
 	"start_row":"2",
 	"end_row":"",
@@ -55,3 +55,13 @@ example:
    The excel sheet index,start from 1.
 
 *  `cols_info`
+   The keys are cols number in the excel that you want to import to the Mysql.It don't need write in order and don't need write every cols,you can also:
+````json
+	"cols_info":{
+		"4":["edu","str"],
+		"1":["name","str"],
+		"2":["age","num"],
+		"5":["phone","str"]
+	},
+````
+	
