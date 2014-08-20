@@ -65,7 +65,9 @@ example:
 	}
 	````
 	The each value is a dict,the first is the column in the dict is will be imported into the field name in mysql.
+
 	![](http://droiz.qiniudn.com/excel-to-sqlexcel-to-sql2.png)
+	
 	the second is the column in the dict is the field datatype ,support 'num' or 'str'.if the field datatype in Mysql is a string,write 'str', otherwise write 'num'.
 *   `start_row`
 	the rows that start to read ,default start form 1(the first row).
@@ -83,10 +85,12 @@ example:
 	````
 *   `barring_row`
 	if you want skip one row,you can write rows in the list.or empty
+
 	````
 	[1,3,5,7]  //will skip these row
 	[]         //don't skip each row
 	````
+
 *   `output`
 	The sql path in disk relative to the program.
 
@@ -96,4 +100,5 @@ python excelTosql.py
 ````
 
 ##License
-[MIT](https://github.com/zhengrenzhe/excel-to-sql/blob/master/LICENSE "MIT")
+[ MIT ](https://github.com/zhengrenzhe/excel-to-sql/blob/master/LICENSE "MIT")
+
