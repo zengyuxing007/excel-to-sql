@@ -23,4 +23,5 @@ get clone https://github.com/zhengrenzhe/excel-to-sql.git
 ````python
 python setup.py install
 ````
-* 
+* Write config.json. This is a configuration file to tell the program how to read the excel.
+ * 
