@@ -44,3 +44,8 @@ example:
 	"output":"./info.sql"
 }
 ````
+
+*  *src* is the excel path in disk relative to the program.
+*  *db_sheet_name* is name of Mysql sheet that will be imported data.
+*  *excel_sheet_number* is the excel sheet index,start from 1.
+*  *cols_info* 
