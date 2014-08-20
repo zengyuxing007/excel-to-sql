@@ -19,3 +19,8 @@ This tool is written by Python2.7,depend on xlrd(0.9.3).
 ````
 get clone https://github.com/zhengrenzhe/excel-to-sql.git
 ````
+* Enter application folder and xlrd-0.9.3 folder,execute the command to install xlrd:
+````python
+python setup.py install
+````
+* 
